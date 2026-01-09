@@ -26,11 +26,5 @@
     }
   },
   "remoteUser": "vscode",
-  "runArgs": [
-    "--privileged"
-  ],
-  "mounts": [
-    "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
-  ],
   "postCreateCommand": "podman --version && buildah --version && skopeo --version"
 }
